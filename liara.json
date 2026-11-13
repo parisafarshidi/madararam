@@ -1,0 +1,16 @@
+{
+  "$schema": "https://json.schemastore.org/liara.json",
+  "app": "madararam-parisa",
+  "port": 4000,
+  "platform": "node",
+  "node": {
+    "version": 22,
+    "timezone": "Asia/Tehran"
+  },
+  "disks": [
+    {
+      "name": "madararam-data",
+      "mountTo": "/usr/src/app/data"
+    }
+  ]
+}

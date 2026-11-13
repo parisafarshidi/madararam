@@ -1,0 +1,62 @@
+@media screen {
+  html { background: #f4eff7; }
+  body { max-width: none; margin: 0; padding: 74px 18px 40px; background: #f4eff7; color: #332c3b; }
+  .screen-controls { top: 12px; left: 50%; transform: translateX(-50%); padding: 7px; border: 1px solid #ece3f0; border-radius: 15px; background: #ffffffed; box-shadow: 0 8px 28px #40334b1a; backdrop-filter: blur(10px); }
+  .cover { width: min(100%, 800px); height: 900px; min-height: 0; margin: 18px auto 30px; padding: 66px 64px; border: 1px solid #e8dff0; border-radius: 18px; box-shadow: 0 18px 46px #49385216; }
+  .cover-art { left: 44px; bottom: 108px; width: 180px; height: 180px; }
+  .cover-art:after { width: 104px; height: 104px; }
+  .cover-main { max-width: 540px; }
+  .cover h1 { margin-top: 48px; font-size: 39px; }
+  .cover-lead { max-width: 470px; font-size: 16px; }
+  .cover-bottom { font-size: 11px; }
+  .page { width: min(100%, 800px); min-height: 900px; margin: 0 auto 30px; padding: 54px 60px; border: 1px solid #ece4ee; border-radius: 18px; background: #fff; box-shadow: 0 18px 46px #49385212; }
+  .page h2 { margin-top: 34px; font-size: 27px; }
+  .page h3 { margin-top: 24px; font-size: 17px; }
+  .page p, .page li { font-size: 14px; line-height: 2; }
+  .page .intro { padding: 15px 18px; }
+  .page .steps li { padding: 12px 50px 12px 14px; margin: 9px 0; }
+  .page .steps li:before { right: 14px; top: 14px; width: 28px; height: 28px; }
+  .page .checklist li { padding: 5px 28px 5px 0; }
+  .page .checklist li:before { top: 6px; }
+  .page .grid-2 { gap: 14px; }
+  .page .card { padding: 16px; }
+  .page .card h3 { margin-top: 0; }
+  .page .callout { padding: 14px 18px; }
+  .page .record-box { padding: 12px; min-height: 95px; }
+  .page .table { font-size: 12px; line-height: 1.8; }
+  .page .table th, .page .table td { padding: 10px; }
+  .page .source-list { font-size: 11px; }
+  .page .footer { margin-top: 26px; }
+}
+
+@media screen and (max-width: 640px) {
+  body { padding: 68px 10px 24px; }
+  .screen-controls { width: calc(100% - 20px); justify-content: center; }
+  .screen-controls button, .screen-controls a { padding: 9px 11px; font-size: 12px; white-space: nowrap; }
+  .cover { height: 760px; padding: 42px 25px; margin: 8px auto 18px; border-radius: 14px; }
+  .cover h1 { margin-top: 44px; font-size: 34px; }
+  .cover-lead { font-size: 13px; }
+  .cover-art { left: 24px; bottom: 96px; width: 130px; height: 130px; font-size: 28px; }
+  .cover-art:after { width: 74px; height: 74px; font-size: 26px; }
+  .cover-bottom { font-size: 10px; }
+  .page { min-height: 0; padding: 30px 22px; margin-bottom: 18px; border-radius: 14px; }
+  .page h2 { margin-top: 25px; font-size: 24px; }
+  .page h3 { margin-top: 20px; font-size: 16px; }
+  .page p, .page li { font-size: 13px; }
+  .page .grid-2 { grid-template-columns: 1fr; }
+  .page .table { font-size: 10px; }
+  .page .table th, .page .table td { padding: 7px; }
+  .page .page-head { font-size: 10px; }
+}
+
+@media print {
+  html, body { margin: 0; padding: 0; background: #fff; }
+  .cover { width: auto; max-width: none; height: 260mm; min-height: 0; margin: 0; padding: 20mm 17mm; border: 0; border-radius: 0; box-shadow: none; }
+  .cover-art { left: 22mm; bottom: 38mm; width: 64mm; height: 64mm; }
+  .cover-art:after { width: 37mm; height: 37mm; }
+  .page { width: auto; max-width: none; min-height: 255mm; margin: 0; padding: 0; border: 0; border-radius: 0; box-shadow: none; background: #fff; }
+  .page h2 { margin-top: 7mm; font-size: 20pt; }
+  .page h3 { margin-top: 6mm; font-size: 13pt; }
+  .page p, .page li { font-size: 10.5pt; line-height: 2; }
+  .page .grid-2 { grid-template-columns: 1fr 1fr; }
+}
